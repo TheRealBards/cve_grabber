@@ -1,0 +1,15 @@
+CREATE DATABASE IF NOT EXISTS `nvd`;
+USE `nvd`
+CREATE TABLE IF NOT EXISTS `nvd`.`cve` (
+	ID INT NOT NULL AUTO_INCREMENT,
+	cve VARCHAR(1000) NOT NULL,
+	vendor VARCHAR(1000) NOT NULL,
+	product VARCHAR(2000) NOT NULL,
+	version VARCHAR(50000) NOT NULL,
+	description VARCHAR(5000) NOT NULL,
+	reference VARCHAR(6500) NOT NULL,
+	cve_published_date DATE NOT NULL,
+	cve_last_modified_date DATE NOT NULL,
+	date_added_to_db DATE NOT NULL,
+	PRIMARY KEY(ID)
+);
