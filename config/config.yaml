@@ -1,0 +1,19 @@
+database:
+  user: "<user>"
+  password: "<password>"
+  host: "<host/IP>"
+  database_name: "nvd"
+
+slack:
+  enabled: "True"
+  api_key: "<api_key>"
+  to:
+    - "<channel_name>"
+
+vendors:
+  - "vendors"
+  - "You're"
+  - "Interested"
+  - "In"
+  - "Like"
+  - "microsoft"
